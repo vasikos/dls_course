@@ -1,0 +1,17 @@
+<html>
+
+<head>
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Demo</title>
+    {% endif %}
+</head>
+
+<body>
+    <div>Segmentation Demo: <a href="/about">About</a> <a href="/upload">Upload</a> <a href="/images">All</a> </div>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+
+</html>
